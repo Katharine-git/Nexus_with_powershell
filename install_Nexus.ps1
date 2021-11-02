@@ -1,3 +1,5 @@
+#Install Nexus
+
 function installnexus($url,$destination,$unzip_destination) {
    
     # downloading Sonatype Nexus    
@@ -29,6 +31,6 @@ $nexus_install_logs = $output.nexus_install_logs
 Start-Transcript -Path $nexus_install_logs
 
 #Function call
-installtomcat $url $destination $unzip_destination
+installnexus $url $destination $unzip_destination
 
 Stop-Transcript
