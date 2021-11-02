@@ -1,5 +1,6 @@
 ﻿
-#Upload files to the NEXUS Repository
+#Upload files to the NEXUS Repository..
+
 function upload($server,$repositoryName,$source,$fileName,$username,$password)
 {
     $url=  New-Object System.Uri("http://$server/repository/$repositoryName/$fileName")
