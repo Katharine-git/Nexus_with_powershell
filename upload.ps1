@@ -1,4 +1,5 @@
-﻿#Upload function
+﻿
+#Upload files to the NEXUS Repository
 function upload($server,$repositoryName,$source,$fileName,$username,$password)
 {
     $url=  New-Object System.Uri("http://$server/repository/$repositoryName/$fileName")
@@ -22,14 +23,11 @@ $VerbosePreference="continue"
 #Calling upload function 
 upload $server $repositoryName $source $fileName $username $password
 
-
-
-
 $URI = $output.URI
 $SOURCE = $output.SOURCE
 $USER = $output.USER
 $pwd = $output.pwd
 
-
+#function call
 upload $URI $SOURCE $CREDS
 
